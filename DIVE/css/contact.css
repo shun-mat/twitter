@@ -1,0 +1,20 @@
+ .contact th{
+  height: 7rem;
+  width: 150px;
+}
+
+td .input_form{
+  width: 480px;
+}
+input[type="submit"]{
+  background-color: #42A0B0;
+  font-size: 2rem;
+  color: white;
+}
+.button{
+  text-align: center;
+}
+
+input[type="submit"]:hover{
+    opacity: 0.5;
+}
