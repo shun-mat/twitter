@@ -1,0 +1,17 @@
+.hoge {
+  position: relative;
+  overflow: hidden; /* 下のulのcssでリスト全体を右に50%移動しているので、その分幅が広がってしまいスクロールバーが表示されてしまいます。それを防ぐ為の設定です。 */
+}
+
+.hoge ul {
+  position: relative;
+  left: 50%; /* リスト全体であるul要素を右に50%移動。つまり先頭を中央に持ってくる感じです。 */
+  float: left;
+}
+
+.hoge ul li {
+  position: relative;
+  left: -50%; /* 各リスト項目になるli要素を左に50%移動。 */
+  float: left;
+  list-style: none; /* 項目にぼっちを出したくない場合はこれを設定（今回はあんまり関係ないですが） */
+}

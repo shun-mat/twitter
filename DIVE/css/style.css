@@ -7,6 +7,13 @@ body {
   height: 100%;
 }
 
+.container{
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -66,14 +73,29 @@ ul.top_menu {
   background-color: #F5B4B3;
   height: 6rem;
   margin-bottom: 10px;
+
+  /*border: solid 2px blue;*/
+}
+
+.side_menu li:hover{
+  opacity:0.6;
+}
+
+.banner a:hover{
+  opacity: 0.6;
 }
 
 .side_menu li a{
-  font-size:2rem;
+  font-size: 2rem;
   color: #fff;
   text-decoration: none;
   display: block;
-  padding: 2rem;
+  padding: 15px;
+  /*border: solid 1px red;*/
+  /*box-sizing: border-box;*/
+  /*vertical-align: baseline;*/
+
+
 }
 
 .banner img{
@@ -90,20 +112,6 @@ ul.top_menu {
   background-color: #848484;
 }
 */
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.side_menu li:hover{
-  opacity:0.6;
-}
-
-.banner a:hover{
-  opacity: 0.6;
-}
-
 .content{
   width: 660px;
   margin-left: 20px;
@@ -117,28 +125,6 @@ ul.top_menu {
   padding: 20px;
   overflow: scroll;
   line-height: 2;
-}
-.footer{
-  background-color: #4D4D4D;
-  height: 100px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  display: table;
-}
-.footer p{
-  font-size: 1rem;
-  color: #fff;
-  text-align: center;
-  vertical-align: middle;
-  display: table-cell;
-}
-
-.container{
-  width: 980px;
-  margin: 0 auto;
-  min-height: 100%;
-  position: relative;
 }
 
 .banner_content{
@@ -160,4 +146,27 @@ ul.top_menu {
 
 .side_menu.point a{
   color: #4D4D4D;
+}
+
+.footer{
+  background-color: #4D4D4D;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: table;
+}
+
+.footer p{
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
 }
