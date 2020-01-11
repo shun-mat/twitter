@@ -28,6 +28,7 @@ header ul {
 
 header ul a {
     margin-left: 4rem;
+    margin-right: 1rem;
     color: white;
     text-decoration: none;
 }
