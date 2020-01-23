@@ -1,0 +1,15 @@
+<html>
+  <body>
+
+    <div id = "myid">
+      <p>Hello world!</p>
+    </div>
+
+  <script>
+    var mydiv = document.getElementById("myid");
+
+    console.log(mydiv.innerHTML);
+  </script>
+
+  </body>
+</html>

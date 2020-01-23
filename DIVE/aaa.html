@@ -1,0 +1,11 @@
+<div class="demo-container">
+  <div class="demo-box">デモ</div>
+  <ul>
+    <li>リスト 項目 1</li>
+    <li>リスト <strong>項目</strong> 2</li>
+  </ul>
+</div>
+
+$('ul li').text(function(index) {
+  return '番号：' + (index + 1);
+});

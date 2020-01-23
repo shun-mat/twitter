@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>DOM操作入門</title>
+</head>
+  <body>
+    <form>
+      <input type="text" name="" id="name"/>
+      <input value="追加" id="btn"/>
+    </form>
+    <h3>TODOリスト</h3>
+    <ul id="lists"></ul>
+    <button type="button" id = "deleteButton">削除する</button>
+    <script>
+   /*
+      const lists = document.getElementById('list2');
+      const target = lists.getElementsByClassName('select');
+
+      for(let i = 0; i < target.length; i++){
+        console.log(target[i]);
+      }*/
+      const lists = document.getElementById('lists');
+      const target = document.getElementById('btn');
+      target.addEventListener('click',function(){
+        const form = document.getElementById('name');
+        const list = document.createElement('li');
+        if(form.value == ""){
+          window.alert('TODOを入力してください。')
+        }else{
+        list.textContent = form.value;
+
+        list.addEventListener('click',function(e){
+          const doneList = e.target;
+          doneList.style.textDecoration = 'line-through';
+          doneList.style.color = 'gray';
+          doneList.style.fontStyle = 'italic';         
+        },false);
+        lists.appendChild(list);
+          console.log(list);
+          form.value = "";
+        }
+      },false);
+
+      const deleteButton = document.getElementById('deleteButton');
+      deleteButton.addEventListener('click',function(){
+        /*
+        console.log("全ての子ノード",lists.childNodes);
+        console.log("最初の子ノード",lists.firstChild);
+        console.log("末尾の子ノード",lists.lastChild);*/
+        while (lists.firstChild) {
+          lists.removeChild(lists.firstChild);
+        }
+      },false);
+
+      </script>
+  </body>
+</html>
